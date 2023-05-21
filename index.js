@@ -21,6 +21,10 @@ app.use(express.static(path.join(__dirname, "client")));
 
 io.on("connection", (socket) => {
   console.log("a user is connected");
+  socket.on("disconnect", () => {
+    console.log("user disconnected");
+  });
+
 });
 
 server.listen(3000, () => {
