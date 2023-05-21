@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,30 @@
     <script src="/socket.io/socket.io.js"></script>
     <script src="./client.js"></script>
 </head>
+
 <body>
     <h1>Rock Paper Scissors</h1>
+    <div id="initial">
+        <button onclick="сreateGame()">Create Game</button>
+        <div>or</div>
+        <input placeholder="Enter Code" type="text" name="" id="roomUniqueId" />
+        <button onclick="joinGame()">Join Game</button>
+
+    </div>
+    <div id="gamePlay" class="container">
+        <div id="waitingArea">
+
+
+        </div>
+        <div id="gameArea" style="display: none;">
+
+        </div>
+        <div id="winnerArea">
+
+
+        </div>
+    </div>
+
 </body>
+
 </html>
