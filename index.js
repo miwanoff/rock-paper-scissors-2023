@@ -5,7 +5,7 @@ const http = require("http");
 const server = http.createServer(app);
 
 app.get("/healthcheck", (req, res) => {
-  res.send("<h1>RPS App running...</h1>");
+  res.send("<h2>RPS App running...</h2>");
 });
 
 server.listen(3000, () => {
