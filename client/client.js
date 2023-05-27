@@ -35,3 +35,8 @@ socket.on("newGame", (data) => {
   ).innerHTML = `Waiting for opponent, please share code ${roomUniqueId} to join`;
   document.getElementById("waitingArea").appendChild(copyButton);
 });
+
+socket.on('playersConnected', (data) => {
+  document.getElementById("waitingArea").style.display = "none";
+
+});
