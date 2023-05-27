@@ -38,5 +38,6 @@ socket.on("newGame", (data) => {
 
 socket.on('playersConnected', (data) => {
   document.getElementById("waitingArea").style.display = "none";
+  document.getElementById('gameArea').style.display = 'block';
 
 });
